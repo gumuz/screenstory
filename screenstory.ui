@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>672</width>
+    <height>338</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Screenstory</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../projects/screenstory/images.png</normaloff>../../../projects/screenstory/images.png</iconset>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>143</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Interval</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" colspan="2">
+          <widget class="QSpinBox" name="txt_interval">
+           <property name="suffix">
+            <string> minutes</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>120</number>
+           </property>
+           <property name="singleStep">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTreeWidget" name="tree_files">
+       <property name="iconSize">
+        <size>
+         <width>51</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="indentation">
+        <number>11</number>
+       </property>
+       <property name="rootIsDecorated">
+        <bool>true</bool>
+       </property>
+       <property name="sortingEnabled">
+        <bool>true</bool>
+       </property>
+       <column>
+        <property name="text">
+         <string>snapshots</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>timestamp</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_start">
+       <property name="text">
+        <string>start!</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../projects/screenstory/images.png</normaloff>../../../projects/screenstory/images.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_start</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>start()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>171</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>160</x>
+     <y>-64</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>browse_for_folder()</slot>
+  <slot>start()</slot>
+ </slots>
+</ui>
