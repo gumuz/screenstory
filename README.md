@@ -15,7 +15,7 @@ Dependencies
 OS Compatibility
 ----------------
 
-I've only tested this on Ubuntu, but since PyQt is cross-platform, there's no reason I can think of why it shouldn't work on Windows or MacOS.
+I've only tested this on Ubuntu, but since PyQt is cross-platform, there's no reason I can think of why it wouldn't work on Windows or MacOS.
 
 Usage
 -----
