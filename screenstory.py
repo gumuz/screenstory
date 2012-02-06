@@ -66,7 +66,7 @@ class ScreenstoryDialog(base_class, form_class):
         except:
             # create new branch
             branch = QtGui.QTreeWidgetItem()
-            branch.setText(0, "Today")
+            branch.setText(0, timestamp.strftime("%Y.%m.%d"))
 
             self.tree_files.addTopLevelItem(branch)
 
