@@ -18,7 +18,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../../../projects/screenstory/images.png</normaloff>../../../projects/screenstory/images.png</iconset>
+    <normaloff>./images.png</normaloff>./images.png</iconset>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
@@ -99,7 +99,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../../projects/screenstory/images.png</normaloff>../../../projects/screenstory/images.png</iconset>
+         <normaloff>./images.png</normaloff>./images.png</iconset>
        </property>
       </widget>
      </item>
