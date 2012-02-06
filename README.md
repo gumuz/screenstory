@@ -20,4 +20,6 @@ I've only tested this on Ubuntu, but since PyQt is cross-platform, there's no re
 Usage
 -----
 
-Run screenstory.py, set the interval and press 'start!'. Screenshots will be saved to a ./snapshots in PNG format.
+Run screenstory.py, set the interval and press 'start!'. Screenshots will be saved to a ./snapshots sub-directory in PNG format.
+
+![Screenstory screenshot](https://github.com/gumuz/screenstory/blob/master/screenstory.png?raw=true "Screenstory screenshot")
